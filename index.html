@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>ROBQDEK</title>
+
+  <style>
+    body {
+      background-color: #111111;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 40px;
+      letter-spacing: 3px;
+      margin: 0 0 10px 0;
+    }
+
+    header p {
+      font-style: italic;
+      margin: 0 0 30px 0;
+    }
+
+    section {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    section h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #00ff00;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-left: 30px;
+    }
+
+    a {
+      color: #00ff00;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid #00ff00;
+      padding-top: 10px;
+    }
+
+    /* === PROSTE PIXEL LOGO === */
+    .pixel-logo {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: 30px;
+    }
+
+    .pixel {
+      width: 20px;
+      height: 20px;
+    }
+
+    .r { background-color: #ff0000; }
+    .g { background-color: #00ff00; }
+    .b { background-color: #0000ff; }
+
+    /* === PIXEL PRZED PUNKTAMI LISTY === */
+    .list-pixel {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+
+    .list-r { background-color: #ff0000; }
+    .list-g { background-color: #00ff00; }
+    .list-b { background-color: #0000ff; }
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- NAPIS NA GÓRZE -->
+  <header>
+    <h1>ROBQDEK</h1>
+    <p>Technologia. Podróże. Proste rozwiązania.</p>
+  </header>
+
+  <!-- STATYCZNE PIXEL LOGO -->
+  <div class="pixel-logo">
+    <div class="pixel r"></div>
+    <div class="pixel g"></div>
+    <div class="pixel b"></div>
+    <div class="pixel r"></div>
+    <div class="pixel g"></div>
+    <div class="pixel b"></div>
+  </div>
+
+  <!-- MOTTO -->
+  <section>
+    <h2>Motto</h2>
+    <p>„Robić rzeczy prosto, solidnie i bez zbędnych komplikacji.”</p>
+  </section>
+
+  <!-- CO ROBIMY -->
+  <section>
+    <h2>Co robimy</h2>
+    <ul>
+      <li>
+        <div class="list-pixel list-r"></div>
+        <span class="description">Fotografia artystyczna i projektowa – Tworzymy zdjęcia pełne emocji i koncepcji.</span>
+      </li>
+      <li>
+        <div class="list-pixel list-g"></div>
+        <span class="description">Turystyka z tajemnicą – Organizujemy wyjazdy odkrywające nieznane zakątki świata.</span>
+      </li>
+      <li>
+        <div class="list-pixel list-b"></div>
+        <span class="description">Edukacja z poszukiwaniem skarbów – Łączymy naukę i przygodę poprzez zagadki i wyzwania.</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- KONTAKT -->
+  <section>
+    <h2>Kontakt</h2>
+    <p>Email: <a href="mailto:rj@robqdek.ovh">rj@robqdek.ovh</a></p>
+    <p>WWW: <a href="https://robqdek.ovh">robqdek.ovh</a></p>
+  </section>
+
+  <footer>
+    © 2026 ROBQDEK
+  </footer>
+
+</div>
+</body>
+</html>
