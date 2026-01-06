@@ -8,19 +8,19 @@
   <style>
     body {
       background-color: #111;
-      color: #00ff00;
+      color: #cfd8cf;
       font-family: "Courier New", monospace;
       margin: 0;
       padding: 0;
     }
 
     a {
-      color: #00ff00;
+      color: #9fb59f;
       text-decoration: underline;
     }
 
     a:hover {
-      color: #fff;
+      color: #ffffff;
     }
 
     .container {
@@ -29,10 +29,9 @@
       padding: 20px;
     }
 
-    /* MENU */
     nav {
       text-align: center;
-      border-bottom: 1px solid #00ff00;
+      border-bottom: 1px solid #2f3f2f;
       padding-bottom: 10px;
       margin-bottom: 30px;
     }
@@ -41,16 +40,36 @@
       margin: 0 10px;
     }
 
-    h1 {
+    .header {
       text-align: center;
-      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
       margin-bottom: 5px;
     }
 
+    .logo {
+      width: 40px;
+      height: auto;
+      opacity: 0.95;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      letter-spacing: 3px;
+      color: #e5ece5;
+    }
+
     .subtitle {
-      text-align: center;
       font-style: italic;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      color: #aab5aa;
     }
 
     section {
@@ -58,38 +77,42 @@
     }
 
     h2 {
-      border-bottom: 1px solid #00ff00;
+      border-bottom: 1px solid #2f3f2f;
       padding-bottom: 5px;
       margin-bottom: 20px;
+      color: #dde5dd;
     }
 
     .pixel {
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       display: inline-block;
       margin-right: 10px;
     }
 
-    .r { background: #ff0000; }
-    .g { background: #00ff00; }
-    .b { background: #0000ff; }
+    .r { background: #cc4444; }
+    .g { background: #66aa66; }
+    .b { background: #5577aa; }
 
     .box {
-      border: 1px solid #00ff00;
+      border: 1px solid #2f3f2f;
       padding: 15px;
       margin-bottom: 20px;
+      background: rgba(255,255,255,0.02);
     }
 
     footer {
       text-align: center;
       font-size: 12px;
-      border-top: 1px solid #00ff00;
+      border-top: 1px solid #2f3f2f;
       padding-top: 10px;
       margin-top: 40px;
+      color: #889988;
     }
 
     @media (max-width: 600px) {
       h1 { font-size: 28px; }
+      .logo { width: 34px; }
     }
   </style>
 </head>
@@ -98,7 +121,6 @@
 
 <div class="container">
 
-  <!-- MENU -->
   <nav>
     <a href="#start">Start</a>
     <a href="#projekty">Projekty</a>
@@ -106,12 +128,15 @@
     <a href="#kontakt">Kontakt</a>
   </nav>
 
-  <!-- START -->
-  <section id="start">
-    <h1>ROBQDEK</h1>
-    <p class="subtitle">Technologia. Podróże. Proste rozwiązania.</p>
+  <section id="start" class="header">
+    <div class="brand">
+      <img src="logo1.png" alt="ROBQDEK logo" class="logo">
+      <h1>ROBQDEK</h1>
+    </div>
 
-    <div style="text-align:center; margin-bottom:30px;">
+    <p class="subtitle">Technologia · Podróże · Proste rozwiązania</p>
+
+    <div style="margin-bottom:25px;">
       <span class="pixel r"></span>
       <span class="pixel g"></span>
       <span class="pixel b"></span>
@@ -125,7 +150,6 @@
     </p>
   </section>
 
-  <!-- PROJEKTY -->
   <section id="projekty">
     <h2>Projekty</h2>
 
@@ -148,33 +172,20 @@
     </div>
   </section>
 
-  <!-- O MNIE -->
   <section id="omnie">
     <h2>O mnie</h2>
 
     <div class="box">
-      <p>
-        <span class="pixel r"></span>
-        ROBQDEK – tworzę projekty łączące technologię, obraz i przygodę.
-      </p>
-
-      <p>
-        <span class="pixel g"></span>
-        Interesuje mnie prostota, oldschool, sens i klimat.
-      </p>
-
-      <p>
-        <span class="pixel b"></span>
-        Lubię rzeczy, które coś znaczą i zostawiają ślad.
-      </p>
+      <p><span class="pixel r"></span> ROBQDEK – łączę technologię, obraz i przygodę.</p>
+      <p><span class="pixel g"></span> Interesuje mnie prostota, sens i klimat.</p>
+      <p><span class="pixel b"></span> Projekty, które coś znaczą i zostawiają ślad.</p>
     </div>
   </section>
 
-  <!-- KONTAKT -->
   <section id="kontakt">
     <h2>Kontakt</h2>
-
     <p>Email: <a href="mailto:robqdek@robqdek.ovh">robqdek@robqdek.ovh</a></p>
+    <p>Telefon: <a href="tel:+48789152651">+48 789 152 651</a></p>
     <p>WWW: <a href="https://robqdek.ovh">robqdek.ovh</a></p>
   </section>
 
